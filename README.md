@@ -10,6 +10,7 @@ This repository contains a set of scripts designed to facilitate the management 
 - [Stop Container](#stop-container)
 - [Add User](#add-user)
 - [Start Stopped Containers](#start-stopped-containers)
+- [Enable Root Login](#enable-root-login)
 
 
 ### Change Passwords
@@ -134,6 +135,45 @@ Once all stopped containers have been addressed, the script will output:
 
 `All stopped containers have been started.`
 
+
+### Enable Root Login
+
+**Script Name:** `root_login.sh`
+
+**Description:**  
+This script is designed to enable root login for a specified Proxmox container. It modifies the SSH configuration to allow root access via SSH, which is particularly useful for administrative tasks that require root privileges directly from SSH sessions.
+
+**Usage:**
+
+1. **Start the script:**
+
+   Execute the script by running:
+   ```bash
+   ./root_login.sh
+
+#### Script Operation:
+
+The script will:
+
+Prompt you to enter the ID of the Proxmox container.
+Check if PermitRootLogin yes is already set in the sshd_config file.
+If not set, it will add PermitRootLogin yes to the sshd_config and restart the SSH service.
+
+#### Completion:
+
+Once the script completes its operation, you will receive one of the following messages:
+
+`Root login is already permitted.`
+
+or
+
+`Root login has been enabled and SSH service restarted.`
+
+#### Example Output:
+`Enter the ID of the Proxmox container: 101`
+
+`Root login has been enabled and SSH service restarted.
+`
 
 
 ### Note
