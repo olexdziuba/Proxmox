@@ -8,6 +8,9 @@ This repository contains a set of scripts designed to facilitate the management 
 - [Change Passwords](#change-passwords)
 - [Create Single Container](#create-single-container)
 - [Stop Container](#stop-container)
+- [Add User](#add-user)
+- [Start Stopped Containers](#start-stopped-containers)
+
 
 ### Change Passwords
 
@@ -92,6 +95,45 @@ Finally, it adds the new user to the sudoers file to grant sudo privileges witho
 `Enter the password for the user john_doe: `
 
 `User john_doe created in the container 101 with sudo rights.`
+
+
+### Start Stopped Containers
+
+**Script Name:** `start_stopped_containers.sh`
+
+**Description:**  
+This script is designed to automatically start all stopped Proxmox containers. It retrieves the list of all containers, checks their current status, and starts any that are not already running. This is particularly useful for batch operations or maintenance windows where multiple containers need to be restarted.
+
+**Usage:**
+
+1. **Start the script:**
+
+   Execute the script by running:
+   ```bash
+   ./start_stopped_containers.sh
+
+2. Script Operation:
+
+The script will automatically:
+
+Retrieve a list of all containers and their statuses.
+Identify containers that are stopped.
+Start each stopped container and print a confirmation message.
+
+3. Completion:
+
+Once all stopped containers have been addressed, the script will output:
+
+`All stopped containers have been started.`
+
+### Example Output:
+
+`Starting container 101...`
+
+`Starting container 102...`
+
+`All stopped containers have been started.`
+
 
 
 ### Note
