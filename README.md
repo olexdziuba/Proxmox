@@ -11,6 +11,7 @@ This repository contains a set of scripts designed to facilitate the management 
 - [Add User](#add-user)
 - [Start Stopped Containers](#start-stopped-containers)
 - [Enable Root Login](#enable-root-login)
+- [Start Container](#start-container)
 
 
 ### Change Passwords
@@ -174,6 +175,49 @@ or
 
 `Root login has been enabled and SSH service restarted.
 `
+
+
+### Start Container
+
+**Script Name:** `start_container.sh`
+
+**Description:**  
+This script provides a straightforward method to start specified Proxmox containers by their Container ID (CTID). It is designed for interactive use, allowing the user to repeatedly start containers as needed and then exit gracefully.
+
+**Usage:**
+
+1. **Run the script:**
+   ```bash
+   ./start_container.sh
+
+Script Interaction:
+
+You will be prompted to enter a Container ID (CTID). Enter the CTID of the container you wish to start or type 'exit' to quit the script.
+The script validates that the entered ID is a numerical value, which is required for a valid CTID.
+After entering a valid CTID, the script attempts to start the specified container.
+Follow-up:
+
+Once the container is started, you will be asked if you want to start another container.
+Enter yes to continue or any other key to exit.
+
+Example Usage and Output:
+
+  ```bash
+   Please enter the container ID (CTID) or 'exit' to quit: 100
+   --Starting container 100--
+   Container 100 has been successfully started.
+   Do you want to start another container? (yes/no): no
+   Goodbye! 
+   ```
+
+
+
+
+#### Error Handling:
+
+`Failed to start container 100. Please check if the container ID is correct and if you have the necessary permissions.`
+
+If the container cannot be started (e.g., incorrect CTID, permissions issues), the script will inform you:
 
 
 ### Note
