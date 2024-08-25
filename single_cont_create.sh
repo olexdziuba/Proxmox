@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # File: single_cont_create.sh
 
 # Collect information from the user
