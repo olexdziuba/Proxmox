@@ -30,6 +30,7 @@ check_and_install_rsync_remote() {
 check_and_install_rsync_local
 
 # Prompt for the CSV file
+# ID_container;IP_suffix;user;password;firstname;lastname
 echo "Please enter the name of the CSV file with the list of containers (e.g., montest.csv):"
 read CSV_FILE
 
