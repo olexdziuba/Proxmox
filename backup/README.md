@@ -34,6 +34,7 @@ This repository contains two Bash scripts for performing backups:
     ```
     ID_container;IP_suffix;user;password;firstname;lastname
     ```
+    
     Example:
     ```
     101;241;root;password123;John;Doe
@@ -61,6 +62,7 @@ sudo apt update
 sudo apt install sshpass
 ```
 ## Usage
+
 **backup_ct.sh**
 
 Run the script interactively:
@@ -77,6 +79,7 @@ Run the script interactively:
 **backup_ct_list.sh**
 
 Run the script interactively:
+
 ```bash
 ./backup_ct_list.sh
 ```
