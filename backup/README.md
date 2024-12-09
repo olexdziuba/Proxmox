@@ -34,7 +34,7 @@ This repository contains two Bash scripts for performing backups:
     ```
     ID_container;IP_suffix;user;password;firstname;lastname
     ```
-    
+
     Example:
     ```
     101;241;root;password123;John;Doe
@@ -63,7 +63,7 @@ sudo apt install sshpass
 ```
 ## Usage
 
-**backup_ct.sh**
+**`backup_ct.sh`**
 
 Run the script interactively:
 ```bash
@@ -76,7 +76,7 @@ Run the script interactively:
 3. The script backs up the /home directory from the remote server to a local folder named backup_<server_IP> (e.g., backup_192.168.0.241).
 4. After completing the backup, you will be asked if you want to perform another backup or exit.
 
-**backup_ct_list.sh**
+**`backup_ct_list.sh`**
 
 Run the script interactively:
 
