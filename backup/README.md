@@ -61,7 +61,8 @@ sudo apt update
 sudo apt install sshpass
 ```
 ## Usage
-backup_ct.sh
+**backup_ct.sh**
+
 Run the script interactively:
 ```bash
 ./backup_ct.sh
@@ -73,7 +74,8 @@ Run the script interactively:
 3. The script backs up the /home directory from the remote server to a local folder named backup_<server_IP> (e.g., backup_192.168.0.241).
 4. After completing the backup, you will be asked if you want to perform another backup or exit.
 
-backup_ct_list.sh
+**backup_ct_list.sh**
+
 Run the script interactively:
 ```bash
 ./backup_ct_list.sh
@@ -90,7 +92,8 @@ Run the script interactively:
 4. The script processes each line in the CSV file until the end.
 
 ### Example Sessions
-backup_ct.sh
+
+**backup_ct.sh**
 ```bash
 === Backup Script ===
 Enter the server IP address: 192.168.0.241
@@ -102,7 +105,7 @@ Do you want to perform a backup for another server? (y/n): n
 Script finished. Goodbye!
 ```
 
-backup_ct_list.sh
+**backup_ct_list.sh**
 ```bash
 Please enter the name of the CSV file with the list of containers (e.g., montest.csv):
 containers.csv
