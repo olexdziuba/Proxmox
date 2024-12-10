@@ -31,7 +31,7 @@ check_and_install_rsync_local
 
 # Prompt for the CSV file
 # ID_container;IP_suffix;user;password;firstname;lastname
-echo "Please enter the name of the CSV file with the list of containers (e.g., montest.csv):"
+echo "Please enter the name of the CSV file with the list of containers (e.g., example.csv):"
 read CSV_FILE
 
 # Verify the file exists
