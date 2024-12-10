@@ -18,6 +18,7 @@ This repository contains two Bash scripts for performing backups:
 ### `backup_ct_list.sh`
 - **CSV-based backups**: Reads a list of Proxmox containers from a CSV file for automated processing.
 - **Customizable IP structure**: Asks for the base IP (e.g., `10.10.0.`) and appends the last segment from the CSV file to construct the container's IP address.
+- **Root user only**: Always connects to containers using the `root` user, as specified in the script.
 - **Dependency management**: Ensures `rsync` is installed both locally and on each container.
 - **Iterative backups**: Processes all containers listed in the CSV file sequentially.
 - **Clear output**: Provides feedback on success or failure for each container.
