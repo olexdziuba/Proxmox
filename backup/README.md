@@ -71,9 +71,9 @@ Run the script interactively:
 ```
 
 ### Workflow
-1. The script prompts you to enter the server's IP address, username, and password.
+1. The script prompts you to enter the server's `IP address`, `username`, and `password`.
 2. It checks if rsync is installed on both the local machine and the remote server. If not, it installs it automatically.
-3. The script backs up the /home directory from the remote server to a local folder named `backup_<server_IP>` (e.g., `backup_192.168.0.241`).
+3. The script backs up the `/home` directory from the remote server to a local folder named `backup_<server_IP>` (e.g., `backup_192.168.0.241`).
 4. After completing the backup, you will be asked if you want to perform another backup or exit.
 
 **`backup_ct_list.sh`**
@@ -90,7 +90,7 @@ Run the script interactively:
 - Constructs the full IP address by appending the last segment from the CSV file.
 - Uses the root user and the password provided in the CSV file to connect via SSH.
 - Checks if rsync is installed on the container. If not, it installs it.
-- Copies the /home directory from the container to a local folder named backup_<container_IP>.
+- Copies the `/home` directory from the container to a local folder named `backup_<container_IP>`.
 - Displays the success or failure of the backup operation.
 4. The script processes each line in the CSV file until the end.
 
