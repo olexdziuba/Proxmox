@@ -73,7 +73,7 @@ Run the script interactively:
 ### Workflow
 1. The script prompts you to enter the server's IP address, username, and password.
 2. It checks if rsync is installed on both the local machine and the remote server. If not, it installs it automatically.
-3. The script backs up the /home directory from the remote server to a local folder named backup_<server_IP> (e.g., backup_192.168.0.241).
+3. The script backs up the /home directory from the remote server to a local folder named `backup_<server_IP>` (e.g., `backup_192.168.0.241`).
 4. After completing the backup, you will be asked if you want to perform another backup or exit.
 
 **`backup_ct_list.sh`**
@@ -127,9 +127,9 @@ Backup process completed for all containers in containers.csv.
 
 ### Notes
 Customizations:
-You can modify the scripts to back up directories other than /home by editing the rsync command.
+You can modify the scripts to back up directories other than `/home` by editing the rsync command.
 Change the backup folder name format in the scripts if needed.
-CSV Requirements: Ensure the CSV file follows the exact format described in the prerequisites for backup_ct_list.sh.
+CSV Requirements: Ensure the CSV file follows the exact format described in the prerequisites for `backup_ct_list.sh`.
 Security: For better security, consider using SSH keys instead of passwords. Update the scripts to remove sshpass and configure key-based authentication.
 
 ### Author
