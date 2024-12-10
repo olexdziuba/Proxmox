@@ -10,7 +10,7 @@ This repository contains two Bash scripts for performing backups:
 ## Features
 
 ### `backup_ct.sh`
-- **Interactive prompts**: Asks for the server's IP address, username, and password.
+- **Interactive prompts**: Asks for the server's `IP address`, `username`, and `password`.
 - **Automatic dependency check**: Verifies and installs `rsync` on both the local machine and the remote server if missing.
 - **Flexible**: Supports backing up multiple servers in one session.
 - **Error handling**: Displays meaningful error messages for failed operations.
